@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.ele {
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+input {
+    height: 35px;
+    padding: 7px 0px;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+small {
+    color: red;
+    display: none;
+}
+
+label{
+    padding: 5px 0px;
+    font-weight: bold;
+}
+
+input:invalid[focused="true"] {
+    border: 1px solid red;
+    display: block;
+}
+
+input:invalid[focused="true"] ~ small {
+    display: block;
+}
