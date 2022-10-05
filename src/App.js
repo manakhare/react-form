@@ -24,6 +24,7 @@ function App() {
     console.log(e.target.value);
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
+  
   const inputs = [
     {
       id: 1,
